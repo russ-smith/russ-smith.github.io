@@ -1,0 +1,121 @@
+﻿<!-- About Section -->
+<section id="about" class="container content-section">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+                	<h2>About me</h2>
+                	<p>Hi. I'm Russ Smith. Welcome to my online home.</p>
+			<p>I'm a programmer with an interest in games, graphics, audio, and all things mathematical and media-based. </p>
+			<p>I've spent the last two years living and working in Shanghai, where I worked at a young, mid-sized indie games company. I worked mainly on graphics-related tasks for our main project, a networked racing game, but I was also involved in prototyping various side projects, writing and optimizing core game logic.</p>
+			<p>For the past year, I've also been tutoring the next generation of programmers in weekend and summer classes, using Python to demonstrate the basic concepts of programming and create simple projects, including clones of a few classic games.</p>
+
+            	</div>
+        </div>
+</section>
+
+<section id="work" class="container content-section">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+                	<h2>Work</h2>
+                	<p>Projects I worked on at Fudong games in Shanghai between 2016 and 2018.</p>
+                        
+			<hr>
+
+			<h3>疯狂飞车 (Crazy Kart Online)</h3>
+			<p>Our main ongoing project during my time there. A casual racing game focused on networked multiplayer</p>
+			
+			{% include kartimages.html %}
+			<br>
+
+			<h4>What I did</h4>
+			<p>Developed custom effects and shaders for in-game models and UI elements.</p>
+			<p>Debugged graphics issues across various platforms and devices.</p>
+			<p>Assisted the art team in transitioning the project from Unity 4 to Unity 5, using the new lighting and GI tools and PBR workflow.</p>
+			<p>Ported the audio system from FMOD to Unity built-in audio for a web build and implemented cached streaming of music tracks from game servers.</p>
+			
+			<hr>
+
+			<h3>The secret solar system</h3>
+			<p>A prototype/ proof of concept educational app about space, built for VR using the Oculus DK2</p>
+			<p>I built out the whole demo over the course of about a month based on an outline from the designers, with help from the art team where necessary</p>
+			<p>Unfortunately we abandoned work with the Oculus kits once the CV1 and the 1.x SDK launched, due to the difficulty of accessing the Oculus services from China</p>
+
+			{% include solarimages.html %}
+			<br>
+
+			<h4>What I did</h4>
+			<p>Research, script writing, acquiring free assets (textures for planets etc.)</p>
+			<p>All programming – flow, animation, audio and graphics. </p>
+			<p>Voiceover recording and editing.</p>
+			
+			<hr>
+
+			<h3>Unreleased shooter project</h3>
+			<p>Work-in-progress 'bullet hell' style shooter game on a spherical game world. Sorry, no screenshots for this one.</p>
+			<h4>What I did</h4>
+			<p>Lots of optimization! Took a prototype running at 'slideshow' framerates and got it running at 30fps on mobile.</p>
+			<p>Implemented game mechanics for power-ups, different projectile types etc.</p>
+			<p>Basic enemy AI programming.</p>
+
+            	</div>
+        </div>
+</section>
+
+<section id="personal" class="container content-section">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+            <h2>Personal</h2>
+			<p>Some projects I've been working on in my own time, just for fun.</p>
+
+			
+			<hr>
+			<h3>Tess</h3>
+			<p>After a while writing scripting code and shaders to run on top of existing game engines, I decided to build a simple game from the ground up using C++ and OpenGL.</p>
+			<p>Tess is the result of that experiment. It's a clone of the casual game 2048, played on a tesseract (a 4D cube).</p>
+			<p>Instead of a 4*4 tile game space, it's 2*2*2*2 with 4 possible movement directions from any point.</p>
+
+			{% include tessimages.html %}
+			<br>
+
+			<h4>Features</h4>
+			<p>Asset loading for shader files, BMFont fonts built with Hiero, and textures from PNG (I borrowed the decoder for this last one from LodePNG).</p>
+			<p>Persistent high score saved as hashed binary file</p>
+			<p>Uses instanced rendering with uniform buffers to draw the whole game in 5 draw calls</p>
+			<h4>Check it out</h4>
+			<p><a href = "https://github.com/russ-smith/Tess/releases/download/1.0.0/Tess.zip" download>Download zip</a></p>
+			<p><a target="_blank" rel="noopener noreferrer" href = "https://github.com/russ-smith/Tess">Source code</a></p>
+
+			<hr>
+
+			<h3>Meshify</h3>
+			<p>This is an ongoing personal project based on a final-year project I made for uni.</p>
+			<p>Built using openFrameworks, it creates indexed 3D meshes from distance field functions, supplied as snippets of GLSL code.</p>
+			<p>All mesh extraction is done on GPU using compute shaders and 'histogram pyramids' to give interactive speeds on most recent graphics cards</p>
+ 			<p>Still very much an alpha version. The GUI needs a cleanup, and I should probably port the whole thing to something more friendly like Qt, but the core functionality works well.</p>
+			
+			{% include meshifyimages.html %}
+			<br>
+
+			<h4>Features</h4>
+			<p>Two mesh creation algorithms - Marching Cubes and Dual Marching Cubes</p>
+			<p>Supports mesh resolutions from 64^3 to 512^3</p>
+			<p>Exports meshes to .obj files.</p>
+			<h4>Check it out</h4>
+			<p><a target="_blank" rel="noopener noreferrer" href = "https://github.com/russ-smith/Meshify">Source code and docs</a></p>
+			
+         </div>
+    </div>
+</section>
+
+<section id="links" class="container content-section">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+            		<h2>Links / Contact</h2>
+			<p>How to find me around the web</a>
+			<p>You can email me at <img src = "img/email.png"></p>
+			<p>I have a <a href = "download/Russell_Smith_CV.pdf" download> C.V.</a></p>
+			<p>I'm new to this <a target="_blank" rel="noopener noreferrer" href = "https://www.linkedin.com/in/russell-smith-52335a103/">Linkedin</a> thing. Let's connect.</p>
+			<p>My <a target="_blank" rel="noopener noreferrer" href = "https://stackexchange.com/users/7192400/russ">StackExchange</a> profile. Mostly active on the Computer Graphics board.
+			<p>I make fractals and ray-tracey stuff on <a target="_blank" rel="noopener noreferrer" href = "https://www.shadertoy.com/user/russ">Shadertoy</a>. Only click this if you have a decent graphics card.</p>
+		</div>
+	</div>
+</section>

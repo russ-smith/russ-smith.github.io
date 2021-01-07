@@ -1,0 +1,49 @@
+---
+layout: default
+title: Personal
+permalink: personal.html
+---
+
+<div class="row">
+	<div class="col-lg-8 col-lg-offset-2">
+            	<h2>Personal</h2>
+		<p>Some projects I've been working on in my own time, just for fun.</p>
+
+			
+		<hr>
+		<h3>Tess</h3>
+		<p>After a while writing scripting code and shaders to run on top of existing game engines, I decided to build a simple game from the ground up using C++ and OpenGL.</p>
+		<p>Tess is the result of that experiment. It's a clone of the casual game 2048, played on a tesseract (a 4D cube).</p>
+		<p>Instead of a 4*4 tile game space, it's 2*2*2*2 with 4 possible movement directions from any point.</p>
+
+		{% include tessimages.html %}
+		<br>
+
+		<h4>Features</h4>
+		<p>Asset loading for shader files, BMFont fonts built with Hiero, and textures from PNG (I borrowed the decoder for this last one from LodePNG).</p>
+		<p>Persistent high score saved as hashed binary file</p>
+		<p>Uses instanced rendering with uniform buffers to draw the whole game in 5 draw calls</p>
+		<h4>Check it out</h4>
+		<p><a href = "https://github.com/russ-smith/Tess/releases/download/1.0.0/Tess.zip" download>Download zip</a></p>
+		<p><a target="_blank" rel="noopener noreferrer" href = "https://github.com/russ-smith/Tess">Source code</a></p>
+
+		<hr>
+
+		<h3>Meshify</h3>
+		<p>This is an ongoing personal project based on a final-year project I made for uni.</p>
+		<p>Built using openFrameworks, it creates indexed 3D meshes from distance field functions, supplied as snippets of GLSL code.</p>
+		<p>All mesh extraction is done on GPU using compute shaders and 'histogram pyramids' to give interactive speeds on most recent graphics cards</p>
+ 		<p>Still very much an alpha version. The GUI needs a cleanup, and I should probably port the whole thing to something more friendly like Qt, but the core functionality works well.</p>
+		
+		{% include meshifyimages.html %}
+		<br>
+
+		<h4>Features</h4>
+		<p>Two mesh creation algorithms - Marching Cubes and Dual Marching Cubes</p>
+		<p>Supports mesh resolutions from 64^3 to 512^3</p>
+		<p>Exports meshes to .obj files.</p>
+		<h4>Check it out</h4>
+		<p><a target="_blank" rel="noopener noreferrer" href = "https://github.com/russ-smith/Meshify">Source code and docs</a></p>
+			
+	</div>
+</div>
